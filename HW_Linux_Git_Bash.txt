@@ -13,3 +13,29 @@ Linux terminal (GitBash) commands
 10) + написать туда что-нибудь, любой текст. ***** Insert
 11) + сохранить и выйти. ***** Escape + :wq
 12) Выйти из папки на уровень выше ***** cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.***** mv H2/{test_2.txt,test_1.txt} H2/unit_1
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. ***** cp H2/{test_3.txt,test_4.json} H2/unit_3
+15) Найти файл по имени ***** find . -name test_1.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. ***** tail -f test_1.txt
+17) вывести несколько первых строк из текстового файла ***** head -n 3 test_1.txt
+18) вывести несколько последних строк из текстового файла ***** tail -n3 test_1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. ***** less lesson_1.txt
+20) вывести дату и время ***** date(date and time in standart format) or date +"%H:%M %d/%m/%Y"(date and time in custom format)
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request ***** curl http://162.55.220.72:5005/terminal-hw-request **curl "http://162.55.220.72:5005/get_method?name="Pavel"&age=30"
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 ***** ./test.sh
+Script:
+#!/bin/bash
+cd D:/group_27/lesson_1/H2/unit_1
+mkdir H1 H2 H3
+cd H2
+touch test_1.txt test_2.txt test_3.txt test_4.json test_5.json
+mkdir u_1 u_2 u_3
+ls -la
+mv {test_2.txt,test_1.txt} u_1 
+
+
