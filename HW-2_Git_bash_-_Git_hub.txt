@@ -22,6 +22,8 @@ TXT
  ***** git add new.txt
        git commit -m "Add information about me"
        git push
+    OR
+       git add new.txt && git commit -m "Add information about me" && git push
  9. Создать файл preferences.txt
 ***** touch preferences.txt
  10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
@@ -57,8 +59,7 @@ TXT
 	-Веб тестирование
 	-Мобильное тестирование
  12. Сделать коммит в одну строку.
- ***** git add {preferences.txt,skills.txt}
-       git commit -m "Add 2 files preferences.txt and skills.txt"
+ ***** git add {preferences.txt,skills.txt} && git commit -m "Add 2 files preferences.txt and skills.txt"
  13. Отправить сразу 2 файла на внешний репозиторий.
  ***** git push
  14. На веб интерфейсе создать файл bug_report.txt.
